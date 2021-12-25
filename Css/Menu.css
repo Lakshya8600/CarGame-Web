@@ -5,7 +5,9 @@
     padding: 0;
 }
 #container{
-    background-color: blueviolet;
+    background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -14,7 +16,7 @@
 }
 #menu{
     position: relative;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(235, 188, 88, 0.562);
     padding: 30px;
     border: rgba(42, 248, 255, 0.466) 5px solid;
     overflow: hidden;
@@ -29,4 +31,12 @@ button{
     font-size: 2em;
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
+    border-radius: 10px;
+    background: linear-gradient(rgb(241, 57, 211),rgb(53, 176, 233));
+    color: rgb(0, 0, 0);
+}
+button:hover{
+    color: wheat;
+    background: linear-gradient(rgba(241, 57, 211,0.5),rgba(53, 176, 233,0.5));
+
 }

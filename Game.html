@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Game </title>
+    <!-- <link rel="stylesheet" href="Css/Menu.css"> -->
     <link rel="stylesheet" href="Css/Game.css">
+    
 </head>
 
 <body>
 
     <div id="container">
-        <img src="Static/car.jpg" alt="" id="mainCar">
+        <img src="Static/car.png" alt="" id="mainCar">
         <img src="Static/ob1.png" alt="" id="obstacle">
         <img src="Static/road.png" alt="" id="road1">
         <img src="Static/road.png" alt="" id="road2">
@@ -21,12 +23,38 @@
         <img src="Static/side.jpg" alt="" id="side1">
         <img src="Static/side.jpg" alt="" id="side2">
         <div id="roadArea"></div>
+        <div id="leftSideArea"></div>
+        <div id="rightSideArea"></div>
     </div>
     <div id="bodyDiv">
     </div>
     <div id="footer">
     </div>
     <script src="Javascript/index.js"></script>
+    <script src="Javascript/obstaclegenerator.js"></script>
+
+    <div id="container2">
+        <div id="menu">
+            <form action="/Game.html">
+                <button>
+                    <span id="buttonText">Restart Game</span>
+                </button>
+            </form>
+            
+            <form action="/">
+                <button>
+                    <span id="buttonText">How to Play</span>
+                </button>
+            </form>
+            
+            <form action="/">
+                <button>
+                    <span id="buttonText">Exit</span>
+                </button>
+            </form>
+            
+        </div>
+    </div>
 
 </body>
 

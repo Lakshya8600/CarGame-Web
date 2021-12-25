@@ -1,9 +1,10 @@
-var leftSide = document.getElementById('side1')
-var RightSide = document.getElementById('side2')
+var leftSide = document.getElementById('leftSideArea')
+var RightSide = document.getElementById('rightSideArea')
 var mainCar = document.getElementById('mainCar')
 var r = document.querySelector(':root')
 var rs = getComputedStyle(r);
 var property = rs.getPropertyValue('--pos'); 
+var si ;
 
 function pxremover(varvalue){
     varvalue = varvalue.replace('px', '');
@@ -18,10 +19,12 @@ function pxadder(varvalue){
 
 property = pxremover(property);
 
-
-var si ;
 leftSide.addEventListener('mouseover', function movement(){
+    
     si = setInterval(() => {
+        if(property < 310){
+            return 0;
+        }
         property -= 2
         r.style.setProperty('--pos', pxadder(property));
     }, 1);
@@ -32,6 +35,9 @@ leftSide.addEventListener('mouseout', function movement(){
 
 RightSide.addEventListener('mouseover', function movement2(){
     si = setInterval(() => {
+        if(property > 950){
+            return 0;
+        }
         property += 2
         r.style.setProperty('--pos', pxadder(property));
     }, 1);

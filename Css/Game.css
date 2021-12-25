@@ -2,8 +2,18 @@
     margin: 0px;
     padding: 0px;
 }
+#container2{
+    display: none;
+    position: absolute;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+    left: 470px;
+}
 :root{
     --pos : 650px;
+    --toppos : -160px;
 }
 #bodyDiv{
     position: absolute;
@@ -17,12 +27,14 @@
     top: 457px;
     left: var(--pos) ;
     height: 200px;
+    width: 86px;
 }
 #obstacle{
     position: absolute;
-    top: -140px;
-    left: 664px;
+    top: var(--toppos);
+    left: 600px;
     height: 164px;
+    width: 81px;
 }
 #road1{
     position: absolute;
@@ -107,7 +119,7 @@
 #side2{
     position: absolute;
     top: 0px;
-    right: 172px;
+    left: 1040px;
     height: 100%;
 }
 #bodyDiv{
@@ -117,4 +129,46 @@
     width: 100%;
     height: 200px;
     top: 650px;
+}
+#leftSideArea{
+    position: absolute;
+    background : transparent;
+    height: 100%;
+    width: 640px;
+    top: 300px;
+}
+#rightSideArea{
+    position: absolute;
+    right: 0px;
+    background : transparent;
+    height: 100%;
+    width: 601px;
+    top: 300px;
+}
+
+
+
+
+
+
+
+
+
+#menu{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    border: rgba(42, 248, 255, 0.466) 5px solid;
+    overflow: hidden;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 16px;
+}
+button{
+    height: 100px;
+    width: 300px;
+    margin : 10px;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
 }
