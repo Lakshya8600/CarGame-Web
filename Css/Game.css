@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --pos : 650px;
+}
+#bodyDiv{
+    position: absolute;
+    background-color: blue;
+    z-index: -20;
+    width: 100%;
+    height: 100%;
+}
+#mainCar{
+    position: absolute;
+    top: 457px;
+    left: var(--pos) ;
+    height: 200px;
+}
+#obstacle{
+    position: absolute;
+    top: -140px;
+    left: 664px;
+    height: 164px;
+}
+#road1{
+    position: absolute;
+    top: 0px;
+    left: 645px;
+    height: 164px;
+    z-index: -9;
+    animation: animate1 0.5s linear infinite;
+}
+#road2{
+    position: absolute;
+    top: 200px;
+    left: 645px;    
+    height: 164px;
+    z-index: -9;
+    animation: animate2 0.5s linear infinite;
+}
+#road3{
+    position: absolute;
+    top: 400px;
+    left: 645px;
+    height: 164px;
+    z-index: -9;
+    animation: animate3 0.5s linear infinite;
+}
+#road4{
+    position: absolute;
+    top: -200px;
+    left: 645px;
+    height: 164px;
+    z-index: -9;
+    animation: animate4 0.5s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 200px;
+    }
+}
+@keyframes animate2{
+    0%{
+        top: 200px;
+    }
+    100%{
+        top: 400px;
+    }
+}
+@keyframes animate3{
+    0%{
+        top: 400px;
+    }
+    100%{
+        top: 600px;
+    }
+}
+@keyframes animate4{
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+#roadArea{
+    position: absolute;
+    top: -2px;
+    left: 303px;
+    height: 164px;
+    background-color: rgb(166, 170, 171);
+    height: 100%;
+    width: 60%;
+    z-index: -10;
+}
+#side1{
+    position: absolute;
+    top: 0px;
+    left: 172px;
+    height: 100%;
+}
+#side2{
+    position: absolute;
+    top: 0px;
+    right: 172px;
+    height: 100%;
+}
+#bodyDiv{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index:    0;
+    width: 100%;
+    height: 200px;
+    top: 650px;
+}
