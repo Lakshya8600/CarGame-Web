@@ -40,3 +40,10 @@ button:hover{
     background: linear-gradient(rgba(241, 57, 211,0.5),rgba(53, 176, 233,0.5));
 
 }
+#Disclaimer{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    top: 450px;
+    padding: 50px;
+}

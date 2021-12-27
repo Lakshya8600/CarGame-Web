@@ -1,7 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
+#maincontainer{
+    background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png');
+}
+
 #container2{
     display: none;
     position: absolute;
@@ -10,6 +15,7 @@
     align-items: center;
     top: 120px;
     left: 470px;
+
 }
 :root{
     --pos : 650px;
