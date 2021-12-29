@@ -1,0 +1,15 @@
+#cover{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(30deg ,rgba(0, 183, 255, 0.678), rgba(235, 52, 241, 0.637));
+}
+#cover p {
+    font-size: 3rem;
+
+}
+#container{
+    display: none;
+}
